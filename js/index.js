@@ -79,3 +79,18 @@ navA5.setAttribute("href", siteContent["nav"]["nav-item-5"]);
 const navA6 = navA5.nextElementSibling;
 navA6.innerText = "Contact";
 navA6.setAttribute("href", siteContent["nav"]["nav-item-6"]);
+
+//MAIN CONTENT
+const mainConH4 = document.querySelectorAll('.text-content h4'); //Remember, adding a space is kinda like a comma, but w/ specificity
+  mainConH4[0].innerText = siteContent['main-content']['features-h4'];
+  mainConH4[1].innerText = siteContent['main-content']['about-h4'];
+  mainConH4[2].innerText = siteContent['main-content']['services-h4'];
+  mainConH4[3].innerText = siteContent['main-content']['product-h4'];
+  mainConH4[4].innerText = siteContent['main-content']['vision-h4'];
+
+const mainConP = document.querySelectorAll('.text-content p');
+  mainConP[0].innerText = siteContent['main-content']['features-content'];
+  mainConP[1].innerText = siteContent['main-content']['about-content'];
+  mainConP[2].innerText = siteContent['main-content']['services-content'];
+  mainConP[3].innerText = siteContent['main-content']['product-content'];
+  mainConP[4].innerText = siteContent['main-content']['vision-content'];
