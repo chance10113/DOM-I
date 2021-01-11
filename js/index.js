@@ -41,6 +41,8 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 const header = document.querySelector('header')
+
+//IMGs
 const middleImage = document.querySelector('#middle-img')
     middleImage.setAttribute('src', siteContent['main-content']['middle-img-src'])
 const domImage = document.querySelector('#cta-img')
@@ -48,3 +50,21 @@ const domImage = document.querySelector('#cta-img')
 
 //NAV
 const nav = document.querySelector('nav')
+const navA1 = nav.querySelector('a');
+  navA1.innerText = "Services"
+  navA1.setAttribute('href', siteContent['nav']['nav-item-1']);
+const navA2 = navA1.nextElementSibling;
+  navA2.innerText = "Product"
+  navA2.setAttribute('href', siteContent['nav']['nav-item-2']);
+const navA3 = navA2.nextElementSibling;
+  navA3.innerText = "Vision"
+  navA3.setAttribute('href', siteContent['nav']['nav-item-3']);
+const navA4 = navA3.nextElementSibling;
+  navA4.innerText = "Features"
+  navA4.setAttribute('href', siteContent['nav']['nav-item-4']);
+const navA5 = navA4.nextElementSibling;
+  navA5.innerText = "About"
+  navA5.setAttribute('href', siteContent['nav']['nav-item-5']);
+const navA6 = navA5.nextElementSibling;
+  navA6.innerText = "Contact"
+  navA6.setAttribute('href', siteContent['nav']['nav-item-6']);
