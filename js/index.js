@@ -63,21 +63,27 @@ domImage.setAttribute("src", siteContent["cta"]["img-src"]);
 const nav = document.querySelector("nav");
 const navA1 = nav.querySelector("a");
 navA1.innerText = "Services";
+navA1.style.color = 'green';
 navA1.setAttribute("href", siteContent["nav"]["nav-item-1"]);
 const navA2 = navA1.nextElementSibling;
 navA2.innerText = "Product";
+navA2.style.color = 'green';
 navA2.setAttribute("href", siteContent["nav"]["nav-item-2"]);
 const navA3 = navA2.nextElementSibling;
 navA3.innerText = "Vision";
+navA3.style.color = 'green';
 navA3.setAttribute("href", siteContent["nav"]["nav-item-3"]);
 const navA4 = navA3.nextElementSibling;
 navA4.innerText = "Features";
+navA4.style.color = 'green';
 navA4.setAttribute("href", siteContent["nav"]["nav-item-4"]);
 const navA5 = navA4.nextElementSibling;
 navA5.innerText = "About";
+navA5.style.color = 'green';
 navA5.setAttribute("href", siteContent["nav"]["nav-item-5"]);
 const navA6 = navA5.nextElementSibling;
 navA6.innerText = "Contact";
+navA6.style.color = 'green';
 navA6.setAttribute("href", siteContent["nav"]["nav-item-6"]);
 
 //MAIN CONTENT
@@ -94,3 +100,29 @@ const mainConP = document.querySelectorAll('.text-content p');
   mainConP[2].innerText = siteContent['main-content']['services-content'];
   mainConP[3].innerText = siteContent['main-content']['product-content'];
   mainConP[4].innerText = siteContent['main-content']['vision-content'];
+
+  //Lower content
+
+  let contact = document.querySelector(".contact");
+  let contactH4 = contact.querySelector('h4');
+contactH4.innerText = "Contact";
+let add = contact.querySelector('p');
+add.innerText = siteContent["contact"]["address"]
+let call = add.nextElementSibling;
+call.innerText = siteContent["contact"]["phone"]
+let pc = call.nextElementSibling;
+pc.innerText = siteContent["contact"]["email"]
+
+let footer = document.querySelector('footer')
+let footerP = footer.querySelector('p')
+footerP.innerText = siteContent['footer']['copyright']
+
+//Additional Navigation Stuff
+let navA7 = document.createElement('a')
+let navA0 = document.createElement('a')
+nav.appendChild(navA7)
+navA7.innerText = "Obvious Gibberish"
+navA7.style.color = 'green';
+nav.prepend(navA0)
+navA0.innerText = "Additional Things"
+navA0.style.color = 'green';
